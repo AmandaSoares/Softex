@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ARRAYS</title>
+    <style>
+        body {
+            color: black;
+            font-family: 'Tahoma';
+            font-size: 18px;
+        }
+
+        #antigo {
+            margin-bottom: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div id="antigo">
+
+    </div>
+    <div id="novo">
+        
+    </div>
+    <script>
+        let nome = ['Amanda','Carlos','Dale','Evandro','Eduarda','Lucas','Lia','Rafaela','Roger','Rodrigo']
+        let idade = [29,32,47,52,24,32,1,35,38,45]
+        let corFavorita = ['Rosa','Azul','Preto','Verde','Roxo','Marrom','Amarelo','Branco','Cinza','Dourado']
+
+        //Passando o array "original" para um array "cópia" usando slice e substituindo um elemento por outro com o splice
+        corFavoritaNovo = corFavorita.slice()
+        corFavoritaNovo.splice(0,1,'Prata')
+
+        idadeNovo = idade.slice()
+        idadeNovo.splice(2,1,48)
+        
+        antigo.innerHTML = `Lista Original:<br> ${nome} <br> ${idade} <br> ${corFavorita}`
+        novo.innerHTML = `Alterei a cor favorita de Amanda e a idade de Dale<br><br> Nova Lista:<br> ${nome} <br> ${idadeNovo} <br> ${corFavoritaNovo}`
+    </script>
+    
+</body>
+</html>
