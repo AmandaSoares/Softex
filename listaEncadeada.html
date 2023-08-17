@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listas Ligadas ou Encadeadas</title>
+</head>
+<body>
+    <script>
+    class Pessoa {
+        constructor(nome, idade, filho = null) {
+        this.nome = nome
+        this.idade = idade
+        this.filho = filho
+        }
+    }
+
+    let pessoa1 = new Pessoa("Evandro", 52)
+    let pessoa2 = new Pessoa("Amanda", 29)
+    
+    pessoa1.filho = pessoa2
+    pessoa2.filho = pessoa1
+    
+    console.log("Nome:", pessoa1.nome, "Idade:", pessoa1.idade, "Filho:", pessoa1.filho)
+    </script>
+</body>
+</html>
