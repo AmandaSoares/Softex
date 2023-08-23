@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalho</title>
+</head>
+<body>
+    <header id="menu">
+        <h2>Utilização das Tags Mais Comuns na HTML</h2>
+        <nav>
+            <ol>
+                <li><a href="#metadados">Metadados</a></li>
+                <li><a href="#separacaoConteudo">Separação de conteúdo</a></li>
+                <li><a href="#texto">Texto</a></li>
+                <li><a href="#imagem">Imagem</a></li>
+                <li><a href="#formulario">Formulário</a></li>
+            </ol>
+        <hr>
+        </nav>
+
+        <main>
+            <section id="metadados">
+                <h2>Metadados</h2>
+                <p>São informações sobre a página que não são visíveis, mas ajudam a descrever seu conteúdo e otimizar a pesquisa.Por exemplo, vincular folha de estilo(css) com a tag <strong>link</strong>.</p>
+                <code>
+                    &lt;link rel="stylesheet" href="styles.css"&gt;  
+                </code>
+                <hr>           
+            </section>
+
+            <section id="separacaoConteudo">
+                <h2>Separação de conteúdo</h2>
+                <p>É uma prática importante para organizar e estruturar o seu código de maneira clara e compreensível. Isso facilita a manutenção, a colaboração e a compreensão do código por outras pessoas.Exemplo de tags de separação de conteudo:</p>
+                <p>&lt;header&gt; definir o cabeçalho de uma seção ou de todo o documento</p>
+                <p>&lt;nav&gt; agrupar links de navegação, como menus, barras de navegação e links para outras páginas ou seções do site</p> 
+                <p>&lt;section&gt; definir uma seção autônoma e significativa de conteúdo</p>
+                <p>&lt;article&gt; marcar um conteúdo independente e autocontido em uma página da web</p>
+                <p>&lt;aside&gt; marcar um conteúdo secundário ou complementar em uma página da web</p>
+                <p>&lt;footer&gt; definir o rodapé de uma página da web</p>
+                <hr>
+            </section>
+
+            <section id="texto">
+                <h2>Texto</h2>
+                <p>São usadas para definir o conteúdo textual de uma página.</p>
+                <h1>Título h1</h1>
+                <h2>Título h2</h2>
+                <h3>Título h3</h3>
+                <h4>Título h4</h4>
+                <h5>Título h5</h5>
+                <h6>Título h6</h6>
+                <p>Isto é um parágrafo, leia-me!</p>
+                <strong>Texto em negrito</strong><br>
+                <em>Texto em itálico</em><br>
+                <u>Texto sublinhado</u><br>
+                <s>Texto riscado</s><br>
+                <hr>
+            </section>
+
+            <section id="imagem">
+                <h2>Imagem</h2>
+                <p>É usada para exibir imagens na página da web. A tag &lt;img&gt; não tem fechamento, pois é uma tag vazia.</p>
+                <img src="https://media.licdn.com/dms/image/D4D03AQG7wM0VE1kxyA/profile-displayphoto-shrink_800_800/0/1680161142425?e=2147483647&v=beta&t=ZaB4CfrrNfNUTj1gm1s9BsVYf5rBQWC5F_BMV-gvMrA" alt="Rony,Hermione e Harry">
+                <img src="https://m.media-amazon.com/images/I/81tfx6ybvRL._UC256,256_CACC,256,256_.jpg" alt="livro HP">
+                <hr>
+            </section>
+
+            <section id="formulario">
+                <h2>Formulário</h2>
+                <p>É uma estrutura que permite aos usuários inserir dados interativamente em uma página da web e enviá-los para um servidor para processamento. </p>
+                <form>  
+                <fieldset>
+                    <p>Nome: <input type="text"></p>
+                    <p>Email: <input type="email"></p>
+                    <p>Telefone: <input type="tel"></p>
+                    <button type="submit">Enviar</button>  
+                </fieldset>
+                </form>
+                <hr>
+            </section>
+        </main>
+    </header>
+
+    <footer>
+        <h4>Aluna: Amanda G. Soares | <a href="#menu">Voltar ao menu principal</a></h4> 
+    </footer>
+</body>
+</html>
