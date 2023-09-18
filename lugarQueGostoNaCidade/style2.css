@@ -8,27 +8,20 @@
 }
 
 body {
-    background-image: url(bg.jpg);
+    background-image: url(bg2.avif);
+    background-size: auto;
+    
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 :root {
     --verde-claro: rgb(111, 190, 101);
     --branco: rgb(255, 255, 255);
     --verde-escuro: rgb(36, 94, 28);
-}
-
-
-html {
-    scroll-behavior: smooth;
-}
-
-main {
-    margin: 0 auto;
-    margin-top: 10px;
-    width: 80%;
-    display: flex;
-    background-color: var(--branco);
-    border-radius: 10px;
+    --azul: #12abd9;
 }
 
 header {
@@ -53,29 +46,14 @@ header {
     margin: 10px;
 }
 
-.conteudoPrincipal {
-    width: 80%;
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
+main {
     margin: 0 auto;
-}
-
-.conteudoPgLocalizacao {
+    margin-top: 10px;
     width: 80%;
-    padding: 20px;
     display: flex;
+    background-color: var(--branco);
+    border-radius: 10px;
     flex-direction: column;
-    margin: 0 auto;
-    height: 80vh;
-}
-
-.menu a, .menu-conteudoPrincipal a {
-    text-decoration: none;
-    color: var(--verde-escuro);
-    font-weight: bold;
-    cursor: pointer;
-    text-transform: uppercase;
 }
 
 h2 {
@@ -83,7 +61,7 @@ h2 {
     padding: 10px;
     text-transform: uppercase;
     font-weight: bold;
-    color: var(--verde-claro);
+    color: var(--azul);
 }
 
 p {
@@ -94,13 +72,31 @@ p {
     margin-bottom: 10px;
 }
 
-#parque::after, #historia::after, #atrativos::after {
-    content: "";
-    display: block;
-    width: 100%;
-    height: 1px;
-    background-color: var(--verde-claro);
-    margin-top: 20px;
+.menu a {
+    text-decoration: none;
+    color: var(--azul);
+    font-weight: bold;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.logoTurismo {
+    height: 79px;
+}
+
+.imgOutrosLugares {
+    width: 500px;
+    display: flex;
+    margin: 0 auto;
+    margin-bottom: 5px;
+}
+
+.conteudoPrincipal {
+    width: 80%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
 }
 
 .menu-conteudoPrincipal {
@@ -137,41 +133,23 @@ p {
     transition: 0.9s;
 }
 
-.conteudoPrincipal .imgConteudoPrincipal  {
-    width: 500px;
-    display: flex;
-    margin: 0 auto;
-    margin-bottom: 5px;
+.menu a, .menu-conteudoPrincipal a {
+    text-decoration: none;
+    color: var(--azul);
+    font-weight: bold;
+    cursor: pointer;
+    text-transform: uppercase;
 }
 
-.imgAtrativosGrid img{
-    width: 250px;
-    height: 200px;
+#zoo .imgOutrosLugares:nth-child(3) {
+    margin-bottom: 40px;
 }
 
-.imgAtrativosGrid {
-    display: flex;
-    justify-content: space-around;  
-}
-
-.imgAtrativos:nth-child(1):active,
-.imgAtrativos:nth-child(2):active,
-.imgAtrativos:nth-child(3):active {
-    transform: scale(1.6); 
-    transition: 0.8s;
-    padding: 15px;
-    margin-top: 30px;
-    margin-bottom: 30px;
-}
-
-iframe {
-    margin: 0 auto;
-}
-
-#informacoes p {
-    line-height: 1;
-}
-
-#informacoes  {
-   margin-bottom: 30px;
+#boaViagem::after, #shopping::after, #marcoZero::after, #zoo::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: var(--azul);
+    margin-top: 20px;
 }
