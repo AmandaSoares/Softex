@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <section id="container">
+            <h1>Cadastro</h1>
+            <form id="formulario">
+                <label class="labels" for="nome">Nome:</label>
+                <input class="inputs" type="text" id="nome">
+
+                <label class="labels" for="salario">Salário:</label>
+                <input class="inputs" type="number" id="salario">
+
+                <label class="labels" for="idade">Idade:</label>
+                <input class="inputs" type="number" id="idade">
+                
+                
+                <label class="labels">Possui diploma?</label>
+                <div class="radio-input">
+                    Sim <input type="radio" name="opcao" value="Sim">
+                    Não <input type="radio"  name="opcao" value="Não">
+                </div>
+               
+                <button type="button" onclick="mostrarDados()">Enviar</button>
+            </form>
+        </section>
+
+        <section id="lateral">
+            <h1>Confirmação dos Dados</h1>
+            <div id="dados-usuario">
+
+            </div>
+            <form class="botoes-lateral oculto">
+                <button onclick="confirmar()">Confirmar</button>
+                <button onclick="cancelar()">Cancelar</button>
+            </form>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
