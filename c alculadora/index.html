@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <h1>Calculadora</h1>
+        <input class="inputs" type="number" id="valor1">
+        <input class="inputs" type="number" id="valor2">
+        
+        <div id="resultado">
+            
+        </div>
+        
+        <div id="operadores">
+            <button class="buttons" onclick="somar()">+</button>
+            <button class="buttons" onclick="subtrair()">-</button>
+            <button class="buttons" onclick="multiplicar()">x</button>
+            <button class="buttons" onclick="dividir()">÷</button>
+            <button class="botao-limpar" onclick="limparCampos()">Limpar</button>
+        </div>
+    </main>
+    <script>      
+        function somar() {
+            let valor1 = Number(document.querySelector('#valor1').value)
+            let valor2 = Number(document.querySelector('#valor2').value)
+            let soma = valor1 + valor2
+            resultado.innerHTML = soma
+        }
+
+        function subtrair() {
+            let valor1 = Number(document.querySelector('#valor1').value)
+            let valor2 = Number(document.querySelector('#valor2').value)
+            let subtracao = valor1 - valor2
+            resultado.innerHTML = subtracao
+        }
+
+        function multiplicar() {
+            let valor1 = Number(document.querySelector('#valor1').value)
+            let valor2 = Number(document.querySelector('#valor2').value)
+            let multiplicacao = valor1 * valor2
+            resultado.innerHTML = multiplicacao
+        }
+
+        function dividir() {
+            let valor1 = Number(document.querySelector('#valor1').value)
+            let valor2 = Number(document.querySelector('#valor2').value)
+            let divisao = valor1 / valor2
+            resultado.innerHTML = `Divisão: ${divisao.toFixed(0)} <br> Resto da divisão: ${valor1 % valor2}`
+        }   
+
+        function limparCampos() {
+            location.reload()
+        }
+
+    </script>
+</body>
+</html>
