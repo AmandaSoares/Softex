@@ -24,39 +24,7 @@
             <button class="botao-limpar" onclick="limparCampos()">Limpar</button>
         </div>
     </main>
-    <script>      
-        function somar() {
-            let valor1 = Number(document.querySelector('#valor1').value)
-            let valor2 = Number(document.querySelector('#valor2').value)
-            let soma = valor1 + valor2
-            resultado.innerHTML = soma
-        }
-
-        function subtrair() {
-            let valor1 = Number(document.querySelector('#valor1').value)
-            let valor2 = Number(document.querySelector('#valor2').value)
-            let subtracao = valor1 - valor2
-            resultado.innerHTML = subtracao
-        }
-
-        function multiplicar() {
-            let valor1 = Number(document.querySelector('#valor1').value)
-            let valor2 = Number(document.querySelector('#valor2').value)
-            let multiplicacao = valor1 * valor2
-            resultado.innerHTML = multiplicacao
-        }
-
-        function dividir() {
-            let valor1 = Number(document.querySelector('#valor1').value)
-            let valor2 = Number(document.querySelector('#valor2').value)
-            let divisao = valor1 / valor2
-            resultado.innerHTML = `Divisão: ${divisao.toFixed(0)} <br> Resto da divisão: ${valor1 % valor2}`
-        }   
-
-        function limparCampos() {
-            location.reload()
-        }
-
+    <script src="script.js"> 
     </script>
 </body>
 </html>
