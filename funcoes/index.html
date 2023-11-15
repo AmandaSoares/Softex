@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verificador de Maioridade</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <img src="https://cdn-icons-png.flaticon.com/512/39/39850.png" alt="imagem representando lei">
+        <h1>Lei de Segredo Mágico</h1>
+        <p>No universo de Harry Potter, a Lei de Segredo Mágico impõe restrições sobre o uso de magia fora da escola de magia e bruxaria Hogwarts, antes que um bruxo ou bruxa atinja a idade de 17 anos. A Lei de Segredo Mágico é projetada para proteger o segredo da existência do mundo mágico da comunidade não-mágica (trouxas). Ela proíbe o uso de magia em locais públicos por bruxos e bruxas menores de idade. Vamos verificar se você poderia ou não praticar magia fora de Hogwarts!</p>
+        <label for="nome">Nome</label>
+            <input type="text" id="nome">
+        <label for="idade">Idade</label>
+            <input type="number" id="idade">
+        <button onclick="coletarDados()">Verificar</button>
+        <div class="ocultar" id="resultado">
+        </div>
+    </main>
+    <script src="script.js"></script> 
+</body>
+</html>
