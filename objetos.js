@@ -1,4 +1,3 @@
-// classes abstratas
 class CasaHogwarts {    
     constructor(nomeCasa, diretorCasa, coresCasa) {
     this.nomeCasa = nomeCasa
@@ -68,7 +67,6 @@ spell.lancarFeitico(spell.escolherConjurador())
 spell.mostrarFeitico()
 separador()
 
-// classes concretas
 class Vassoura {
     constructor(nomeVassoura, fabricante, velocidade) {
         this.nomeVassoura = nomeVassoura
